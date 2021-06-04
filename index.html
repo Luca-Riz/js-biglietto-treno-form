@@ -29,7 +29,7 @@
                                     <!-- nome cognome -->
                                     <div class="col-3 box bg-danger border">
                                         <label for="name">Nome Cognome</label><br>
-                                        <input type="text">
+                                        <input id="nomeIn" type="text">
                                     </div>
                                     <!-- fine nome cognome -->
     
@@ -42,7 +42,7 @@
     
                                     <!-- fascia età -->
                                     <div class="col-3 box bg-danger border">
-                                        <label for="km">Fascia d'età</label><br>
+                                        <label for="eta">Fascia d'età</label><br>
                                         <select name="eta" id="fasciaEta">
                                             <option value="">Maggiorenne</option>
                                             <option value="">Minorenne</option>
@@ -55,8 +55,8 @@
                                 <!-- fine form -->
     
                                 <div class="d-flex justify-content-center">
-                                    <div class="btn">Genera</div>
-                                    <div class="btn">Annulla</div>
+                                    <div id="bGenera" class="btn">Genera</div>
+                                    <div id="bAnnulla" class="btn">Annulla</div>
                                 </div>
                             </div>
 
@@ -65,7 +65,7 @@
                             <div class="row bg-light box ">
                                 <div class="col-3 bg-secondary box">
                                     <h3 class="text-uppercase">Nome passeggero</h3>
-                                    <div>Nome</div>
+                                    <div id="nomePass">Nome</div>
                                 </div>
                                 <div class="col-9">
                                     <!-- tabella prezzi -->
@@ -115,7 +115,7 @@
 
 
     <!-- link js -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
