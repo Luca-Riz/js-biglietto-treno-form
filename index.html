@@ -19,15 +19,48 @@
                         <!-- contenuto biglietto -->
                         <div class="col-10 offset-1">
                             <h2 class="text-uppercase text-center text-white">Calcola il prezzo del tuo biglietto</h2>
-                            <div class="row bg-light box justify-content-around">
-                                <div class="col-3 box bg-danger border">nome cognome</div>
-                                <div class="col-3 box bg-danger border">km</div>
-                                <div class="col-3 box bg-danger border">fascia eta</div>
+
+                            
+                            <div class="container-fluid bg-light">
+
+                                <!-- inizio form -->
+                                <form class="row bg-light box justify-content-around">
+    
+                                    <!-- nome cognome -->
+                                    <div class="col-3 box bg-danger border">
+                                        <label for="name">Nome Cognome</label><br>
+                                        <input type="text">
+                                    </div>
+                                    <!-- fine nome cognome -->
+    
+                                    <!-- km -->
+                                    <div class="col-3 box bg-danger border">
+                                        <label for="km">Km da percorrere</label><br>
+                                        <input type="number">
+                                    </div>
+                                    <!-- fine km -->
+    
+                                    <!-- fascia età -->
+                                    <div class="col-3 box bg-danger border">
+                                        <label for="km">Fascia d'età</label><br>
+                                        <select name="eta" id="fasciaEta">
+                                            <option value="">Maggiorenne</option>
+                                            <option value="">Minorenne</option>
+                                            <option value="">Over 65</option>
+                                        </select>
+                                    </div>
+                                    <!-- fine fascia età -->
+    
+                                </form>
+                                <!-- fine form -->
+    
+                                <div class="d-flex justify-content-center">
+                                    <div class="btn">Genera</div>
+                                    <div class="btn">Annulla</div>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <div class="btn">Genera</div>
-                                <div class="btn">Annulla</div>
-                            </div>
+
+
                             <h2 class="text-uppercase text-center text-white">Il tuo biglietto</h2>
                             <div class="row bg-light box ">
                                 <div class="col-3 bg-secondary box">
