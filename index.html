@@ -36,7 +36,7 @@
                                     <!-- km -->
                                     <div class="col-3 box bg-danger border">
                                         <label for="km">Km da percorrere</label><br>
-                                        <input type="number">
+                                        <input id="kmIn" type="number">
                                     </div>
                                     <!-- fine km -->
     
@@ -44,9 +44,9 @@
                                     <div class="col-3 box bg-danger border">
                                         <label for="eta">Fascia d'età</label><br>
                                         <select name="eta" id="fasciaEta">
-                                            <option value="">Maggiorenne</option>
-                                            <option value="">Minorenne</option>
-                                            <option value="">Over 65</option>
+                                            <option value="25">Maggiorenne</option>
+                                            <option value="15">Minorenne</option>
+                                            <option value="70">Over65</option>
                                         </select>
                                     </div>
                                     <!-- fine fascia età -->
@@ -81,10 +81,10 @@
                                           </thead>
                                           <tbody>
                                             <tr>
-                                                <td>Sconto Minorenne</td>
+                                                <td id="sconto"></td>
                                                 <td>7</td>
                                                 <td>97928</td>
-                                                <td>3.36€</td>
+                                                <td id="prezzo">€</td>
                                             </tr>
 
                                           </tbody>
