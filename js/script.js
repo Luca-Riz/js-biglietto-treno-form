@@ -5,21 +5,18 @@
 
 var elabora = document.getElementById('bGenera');
 
-// js ascolta il click del pulsante
+// js ascolta il click del pulsante, sotto ci sono le istruzioni da fare al click
 elabora.addEventListener("click", function(){
-    // prendo e passo il nome
-    //prendo
-    var nome = document.getElementById("nomeIn").value;
-    // console.log(nome);
-    //passo
+    // prendo da html e passo a js il nome
+    var nome = document.getElementById("nomeIn").value;    
+    //  passo da js a html il nome
     document.getElementById('nomePass').innerHTML = nome;
 
-    //km
+    // prende dati da form
     var km = document.getElementById("kmIn").value;
     var eta = document.getElementById("fasciaEta").value;
     
-    // programma già testato - funzionante senzapescare dati da html
-      
+    // calcolo prezzo      
     var prezzo = km * 0.21;
     var sconto = "Nessuno sconto"
     if (eta < 18) {
@@ -30,11 +27,11 @@ elabora.addEventListener("click", function(){
         sconto = 'Sconto Over 65';
     } 
     
-    prezzo = prezzo.toFixed(2);
-    
-    document.getElementById('prezzo').innerHTML += prezzo;
-    document.getElementById('sconto').innerHTML = sconto;
-
+    prezzo = prezzo.toFixed(2); // arrotonda a due cifre decimali il prezzo    
+    document.getElementById('prezzo').innerHTML = prezzo; //output prezzo
+    document.getElementById('sconto').innerHTML = sconto; // output stringa sconto
+    document.getElementById('codCp').innerHTML = Math.floor(Math.random()*10000)+90000; //cp random
+    document.getElementById('carrozza').innerHTML = Math.floor(Math.random()*9)+1; //carrozza random
 
 });
 
