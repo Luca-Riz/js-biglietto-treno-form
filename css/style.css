@@ -18,13 +18,18 @@
 form input, form select{
     border: 1px solid #b91450;
     border-radius: 5px;
+    margin: 10px 0;
+}
+
+form label {
+    margin: 10px 0;
 }
 
 .input_cell {
     border-radius: 10px;
 }
 
-#show-hide { display: none;}
+/* #show-hide { display: none;} */
 
 
 

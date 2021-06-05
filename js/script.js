@@ -29,7 +29,7 @@ elabora.addEventListener("click", function(){
     var x = document.getElementById("show-hide");
         x.style.display = "block"; // mostra biglietto
     document.getElementById('nomePass').innerHTML = nome; //nome
-    document.getElementById('prezzo').innerHTML = prezzo; // prezzo
+    document.getElementById('prezzo').innerHTML = prezzo + '€'; // prezzo
     document.getElementById('sconto').innerHTML = sconto; // stringa sconto
     document.getElementById('codCp').innerHTML = Math.floor(Math.random()*10000)+90000; //cp random
     document.getElementById('carrozza').innerHTML = Math.floor(Math.random()*9)+1; //carrozza random
