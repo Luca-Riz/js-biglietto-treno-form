@@ -5,14 +5,11 @@
 
 var elabora = document.getElementById('bGenera');
 
-// js ascolta il click del pulsante, sotto ci sono le istruzioni da fare al click
+// pulsante Genera
 elabora.addEventListener("click", function(){
-    // prendo da html e passo a js il nome
-    var nome = document.getElementById("nomeIn").value;    
-    //  passo da js a html il nome
-    document.getElementById('nomePass').innerHTML = nome;
-
+    
     // prende dati da form
+    var nome = document.getElementById("nomeIn").value;    
     var km = document.getElementById("kmIn").value;
     var eta = document.getElementById("fasciaEta").value;
     
@@ -26,16 +23,34 @@ elabora.addEventListener("click", function(){
         prezzo = prezzo * 0.6;  //sconto 40% over 65
         sconto = 'Sconto Over 65';
     } 
-    
     prezzo = prezzo.toFixed(2); // arrotonda a due cifre decimali il prezzo    
-    document.getElementById('prezzo').innerHTML = prezzo; //output prezzo
-    document.getElementById('sconto').innerHTML = sconto; // output stringa sconto
+    
+    //output
+    var x = document.getElementById("show-hide");
+        x.style.display = "block"; // mostra biglietto
+    document.getElementById('nomePass').innerHTML = nome; //nome
+    document.getElementById('prezzo').innerHTML = prezzo; // prezzo
+    document.getElementById('sconto').innerHTML = sconto; // stringa sconto
     document.getElementById('codCp').innerHTML = Math.floor(Math.random()*10000)+90000; //cp random
     document.getElementById('carrozza').innerHTML = Math.floor(Math.random()*9)+1; //carrozza random
-
 });
 
+// pulsante annulla
+var annulla = document.getElementById('bAnnulla');
 
+annulla.addEventListener("click", function(){
+    // document.getElementById('biglietto').className = "hidden";
+
+    //nascondi biglietto
+    var x = document.getElementById("show-hide");
+    x.style.display = "none"; 
+
+    //svuoto tutti i campi    
+    document.getElementById('nomeIn').value = "";
+    document.getElementById('kmIn').value = "";
+    document.getElementById('fasciaEta').value = "";
+
+});
 
 
 
