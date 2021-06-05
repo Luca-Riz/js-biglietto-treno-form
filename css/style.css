@@ -15,6 +15,15 @@
     background-color: white;
 }
 
+form input, form select{
+    border: 1px solid #b91450;
+    border-radius: 5px;
+}
+
+.input_cell {
+    border-radius: 10px;
+}
+
 #show-hide { display: none;}
 
 

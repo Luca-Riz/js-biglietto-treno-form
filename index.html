@@ -18,32 +18,32 @@
                     <div class="row">
                         <!-- contenuto biglietto -->
                         <div class="col-10 offset-1">
-                            <h2 class="text-uppercase text-center text-white">Calcola il prezzo del tuo biglietto</h2>
+                            <h2 class="text-uppercase text-center text-white my-4">Calcola il prezzo del tuo biglietto</h2>
 
                             
-                            <div class="container-fluid bg-light">
+                            <div class="input_cell container-fluid bg-light shadow mb-5">
 
                                 <!-- inizio form -->
-                                <form class="row bg-light box justify-content-around">
+                                <form class="row bg-light justify-content-around">
     
                                     <!-- nome cognome -->
-                                    <div class="col-3 box bg-danger border">
-                                        <label for="name">Nome Cognome</label><br>
-                                        <input id="nomeIn" type="text">
+                                    <div class="col-3 text-center">
+                                        <label class="color_red" for="name">Nome Cognome</label><br>
+                                        <input class="text-center" id="nomeIn" type="text">
                                     </div>
                                     <!-- fine nome cognome -->
     
                                     <!-- km -->
-                                    <div class="col-3 box bg-danger border">
-                                        <label for="km">Km da percorrere</label><br>
-                                        <input id="kmIn" type="number">
+                                    <div class="col-3 text-center">
+                                        <label class="color_red" for="km">Km da percorrere</label><br>
+                                        <input class="text-center" id="kmIn" type="number">
                                     </div>
                                     <!-- fine km -->
     
                                     <!-- fascia età -->
-                                    <div class="col-3 box bg-danger border">
-                                        <label for="eta">Fascia d'età</label><br>
-                                        <select name="eta" id="fasciaEta">
+                                    <div class="col-3 text-center">
+                                        <label class="color_red" for="eta">Fascia d'età</label><br>
+                                        <select class="text-center" name="eta" id="fasciaEta">
                                             <option value="25">Maggiorenne</option>
                                             <option value="15">Minorenne</option>
                                             <option value="70">Over 65</option>
@@ -55,16 +55,16 @@
                                 <!-- fine form -->
     
                                 <div class="d-flex justify-content-center">
-                                    <div id="bGenera" class="btn">Genera</div>
-                                    <div id="bAnnulla" class="btn">Annulla</div>
+                                    <div id="bGenera" class="btn btn-secondary btn-outline-danger fw-bold">Genera</div>
+                                    <div id="bAnnulla" class="btn btn-secondary btn-outline-danger fw-bold">Annulla</div>
                                 </div>
                             </div>
 
                             <div id="show-hide">
 
                                 <h2 class="text-uppercase text-center text-white">Il tuo biglietto</h2>
-                                <div class="row bg-light box ">
-                                    <div class="col-3 bg-secondary box">
+                                <div class="row bg-light mb-5">
+                                    <div class="col-3 bg-secondary">
                                         <h3 class="text-uppercase">Nome passeggero</h3>
                                         <div id="nomePass">Nome</div>
                                     </div>
