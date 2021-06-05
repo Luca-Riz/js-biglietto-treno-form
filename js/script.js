@@ -12,6 +12,23 @@ elabora.addEventListener("click", function(){
     var nome = document.getElementById("nomeIn").value;    
     var km = document.getElementById("kmIn").value;
     var eta = document.getElementById("fasciaEta").value;
+
+    // controllo dati
+    // nome
+    if (nome == ''){
+        alert('Attenzione, inserire nome')
+    };
+
+    // km
+    if (km == ''){
+        alert('Attenzione valore "km" non corretto, inserire solo il numero di km da percorrere')
+    } else if (Math.sign(km) == -1){
+        alert('Attenzione, numero negativo, lo considero positivo e calcolo');
+        km *= -1;
+    } else if (km == 0){
+        alert('Attenzione, valore km non corretto, inserire un valore maggiore');
+    };
+    
     
     // calcolo prezzo      
     var prezzo = km * 0.21;
