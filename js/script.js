@@ -5,7 +5,7 @@
 
 var elabora = document.getElementById('bGenera');
 
-// pulsante Genera
+// *pulsante genera
 elabora.addEventListener("click", function(){
     
     // prende dati da form
@@ -28,7 +28,7 @@ elabora.addEventListener("click", function(){
     } else if (km == 0){
         alert('Attenzione, valore km non corretto, inserire un valore maggiore');
     };
-    
+    //fine controllo dati
     
     // calcolo prezzo      
     var prezzo = km * 0.21;
@@ -52,7 +52,7 @@ elabora.addEventListener("click", function(){
     document.getElementById('carrozza').innerHTML = Math.floor(Math.random()*9)+1; //carrozza random
 });
 
-// pulsante annulla
+// *pulsante annulla
 var annulla = document.getElementById('bAnnulla');
 
 annulla.addEventListener("click", function(){
@@ -65,7 +65,7 @@ annulla.addEventListener("click", function(){
     //svuoto tutti i campi    
     document.getElementById('nomeIn').value = "";
     document.getElementById('kmIn').value = "";
-    document.getElementById('fasciaEta').value = "";
+    document.getElementById('fasciaEta').value = ""; // !svuoto anche fascia età (come da consegna) io lascerei "maggiorenne"
 
 });
 
